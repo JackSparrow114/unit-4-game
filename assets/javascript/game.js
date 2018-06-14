@@ -3,10 +3,10 @@ $(document).ready(function(){
     var currentScore = 0, wins = 0, losses = 0;
     $("#target-score").html(`<h1>${targetScore}</h1>`);
 
-    var random1 = Math.floor(Math.random() * 12);
-    var random2 = (Math.floor(Math.random() * 6)) * 2;
-    var random3 = Math.floor(Math.random() * 12);
-    var random4 = (Math.floor(Math.random() * 5)) * 2 + 1;
+    var random1 = Math.floor(Math.random() * 12) + 1;
+    var random2 = (Math.floor(Math.random() * 6)) * 2 + 1;
+    var random3 = Math.floor(Math.random() * 12) + 1;
+    var random4 = (Math.floor(Math.random() * 6)) * 2 + 2;
 
     function checkScore(){
         if(currentScore === targetScore){
@@ -27,10 +27,10 @@ $(document).ready(function(){
         $("#target-score").html(`<h1>${targetScore}</h1>`);
         currentScore = 0;
         $("#current-score").html(`<h1>Your score : ${currentScore}</h1>`);
-        random1 = Math.floor(Math.random() * 12);
-        random2 = (Math.floor(Math.random() * 6)) * 2;
-        random3 = Math.floor(Math.random() * 12);
-        random4 = (Math.floor(Math.random() * 5)) * 2 + 1;
+        random1 = Math.floor(Math.random() * 12) + 1;
+        random2 = (Math.floor(Math.random() * 6)) * 2 + 1;
+        random3 = Math.floor(Math.random() * 12) + 1;
+        random4 = (Math.floor(Math.random() * 6)) * 2 + 2;
     }
 
     $("#crystal-1").on("click",function(){
