@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to the crystal game!</h1>
+    </div>
+    <div id="container">
+        <div class="row">
+            <div class="col">
+                <h1>Start clicking crystals to play the game! Try to achieve the score shown in the box below.</h1>
+                <h1>Remember! Your score should be exactly same as shown in the box. Going over the score means you lost the game!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button style="background: url(assets/image/crystal-1.jpg)" id="crystal-1"></button>
+                <button style="background: url(assets/image/crystal-2.jpg)" id="crystal-2"></button>
+                <button style="background: url(assets/image/crystal-3.jpg)" id="crystal-3"></button>
+                <button style="background: url(assets/image/crystal-4.jpg)" id="crystal-4"></button>
+            </div>
+        </div>
+        <div class="row row-box">
+            <div class="col col-box">
+                <div class="scorecard" id="target-score">
+                    <h1>0</h1>
+                </div>
+                <div class="scorecard" id="total-score">
+                    <p><span id="wins">Wins : 0 </span><span id="losses">Losses : 0 </span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-box"></div>
+        <div class="row row-box">
+            <div class="col col-box" id="result-div">
+                <div class="scorecard" id="current-score">
+                    <h1>Your score : 0</h1>
+                </div>
+                <div class="scorecard" id="current-message">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>@ Arpit Shukla</h1>
+    </div>
+</body>
+</html>
